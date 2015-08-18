@@ -9,4 +9,4 @@ RUN apt-get install -y --no-install-recommends \
 VOLUME /var/lib/tftpboot
 
 EXPOSE 69
-CMD in.tftpd -L --u tftp -a 0.0.0.0:69 --s -B1468 -v /var/lib/tftpboot
+CMD in.tftpd -L --user tftp -a 0.0.0.0:69 -s -B1468 -v /var/lib/tftpboot
